@@ -1,0 +1,355 @@
+@font-face {
+  font-family: 'Open Sans Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'),
+       url('../fonts/OpenSans/OpenSans-Light.ttf') format('ttf'),
+       url('../fonts/OpenSans/OpenSans-Light.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'),
+		url('../fonts/OpenSans/OpenSans-Bold.ttf') format('ttf'),
+       	url('../fonts/OpenSans/OpenSans-Bold.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'Roboto Slab Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('RobotoSlab Regular'),
+       url('../fonts/RobotoSlab/RobotoSlab-Regular.woff2') format('woff2'), 
+       url('../fonts/RobotoSlab/RobotoSlab-Regular.woff') format('woff'),
+       url('../fonts/RobotoSlab/RobotoSlab-Regular.ttf') format('ttf'),
+       url('../fonts/RobotoSlab/RobotoSlab-Regular.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'Roboto Slab Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('RobotoSlab Bold'),
+       url('../fonts/RobotoSlab/RobotoSlab-Bold.woff2') format('woff2'), 
+       url('../fonts/RobotoSlab/RobotoSlab-Bold.woff') format('woff'),
+       url('../fonts/RobotoSlab/RobotoSlab-Bold.ttf') format('ttf'),
+       url('../fonts/RobotoSlab/RobotoSlab-Bold.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'Intro';
+  font-style: normal;
+  font-weight: normal;
+  src: local('IntroRegular'),
+       url('../fonts/Intro/IntroRegular.ttf') format('ttf');
+}
+
+/* Main*/
+html, body {
+	height: 100%;
+	margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+  font: 14px/20px 'Open Sans Light', sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+header, section, footer, aside, nav, article {
+  display: block; 
+}
+
+img {
+	max-width: 100%;
+}
+
+/* helpers and layout*/
+* html .wrapper {
+    height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+}
+
+.content {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.right-column {
+	float: right;
+	width: 25%;
+	border: 1px solid #e5e5e5;
+	box-sizing: border-box;
+}
+
+.left-column {
+	float: left;
+	width: 75%;
+    padding: 0 20px 0 0;
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+} 
+
+/* header*/
+header {
+	position: relative;
+	height: 117px;
+	margin: 0 0 49px;
+	border-bottom: 1px solid #68b303;
+	text-align: center;
+}
+
+header a {
+	position: relative;
+    top: 28px;
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+}
+
+header img {
+	width: 100%;
+	margin-bottom: 3px;
+}
+
+header span {
+	display: block;
+	margin-left: -3px;
+	font: 16px/24px 'Open Sans Semibold', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/*Content*/
+.h1, .h3 {
+	font-family: 'Roboto Slab', serif;
+}
+
+.h1 {
+	font-size: 48px;
+	line-height: 1;
+	margin: 0 10px 19px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.h3 {
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0 10px 10px;
+	font-weight: 400;
+}
+
+.intro {
+	margin: 0 0 0 8px;
+}
+
+.left-column p.large-text {
+	margin: 0 10px 10px;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+/*Sidebar*/
+.right-column {
+	margin: 0 0 46px;
+	padding: 180px 0 21px 0;
+	background: #fefefe url(img/bg-side.png) center top no-repeat;
+}
+
+.right-column p {
+	margin: 33px 17px 20px;
+}
+
+.instruction h4 {
+	margin: 0 5px 12px;
+	font:700 14px/1.5 "Open Sans Bold",sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+dl {
+	margin: 0 0 0 17px;
+}
+
+dl dt {
+	display: inline;
+	color: #68b303;
+	font-weight: 700;
+	font-family: "Open Sans Bold",sans-serif;
+}
+
+dl dd {
+	display: inline;
+	color: #000;
+	font-weight: 300;
+}
+
+dd.dd-img {
+	display: block;
+	margin: 16px 0 17px -25px;
+	text-align: center;
+}
+
+button.btn {
+	color: #fff;
+	background: #68b303;
+	border: none;
+    display: block;
+    margin: 0 auto;
+	padding: 18px 26px;
+	font: 700 16px/1.5 "Open Sans Bold", sans-serif;
+	text-transform: uppercase;
+	border-radius: 4px;
+	box-shadow: 0px 4px 3.84px 0.16px rgba(0, 0, 0, 0.5);
+}
+
+/*Section faq*/
+.faq {
+	background: #f7f7f7;
+}
+
+.faq .h2 {
+	background: #68b303;
+	color: #fff;
+	padding: 20px 50px;
+	font: 700 24px/1.2 "Intro", sans-serif; 
+}
+
+/*Accordion*/
+#accordion {
+	padding: 25px;
+}
+
+#accordion .h3 {
+	background: #fff;
+	padding: 20px 23px;
+	margin: 0 0 5px;
+}
+
+#accordion .h3:focus {
+    outline: none;
+} 
+
+#accordion span.h4 {
+	color: #68b303;
+	text-decoration: underline;
+}
+
+#accordion .info-text {
+    background: #fff;
+    margin: -5px 0 5px;
+    padding: 0 20px 15px 23px;
+}
+
+.ui-icon.icon-open,
+.ui-icon.icon-closed {
+    display: inline-block;
+    float: right;
+    margin: 9px 0 0;
+}
+
+.ui-icon.icon-open {
+    background:url('img/arr-open.png') no-repeat;
+    width: 12px;
+    height: 7px;
+}
+
+.ui-icon.icon-closed {
+    background:url('img/arr-close.png') no-repeat;
+    width: 7px;
+    height: 12px;
+}
+
+/*Footer*/
+.footer-buffer {
+	clear: both;
+	height: 67px;
+}
+
+footer {
+	height: 66px;
+	margin-top: -67px;
+	border-top: 1px solid #68b303; 
+}
+
+@media only screen and (min-width: 840px) and (max-width: 1200px),
+only screen and (min-device-width: 840px) and (max-device-width: 1200px) {
+	.right-column {
+		width: 35%;
+	}
+
+	dd.dd-img {
+    	margin: 20px 2em;
+	}
+
+	dd img {
+		width: 100%;
+	}
+	.left-column{
+		width: 65%;
+	}
+}
+
+@media only screen and (min-width: 500px) and (max-width: 840px),
+only screen and (min-device-width: 500px) and (max-device-width: 840px) {
+	.right-column {
+		width: 55%;
+		font-size: 1.2em;
+	}
+
+	.left-column{
+		width: 45%;
+	}
+
+	.instruction .h4 {
+		font-size: 2em;
+	}
+
+	dd.dd-img {
+    	margin: 20px 2em;
+	}
+
+	dd img {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px),
+only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+	.right-column, .left-column {
+		float: none;
+		width: 90%;
+		margin: 20px 5%;
+		font-size: 1.2em;
+	}
+
+	.instruction .h4 {
+	font-size: 2em;
+	}
+}
